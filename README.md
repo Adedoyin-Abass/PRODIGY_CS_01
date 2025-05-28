@@ -22,7 +22,7 @@ You only need Python 3 installed on your system to run this program.
 
 Open Bash
 
-git clone https://github.com/Ubuntu-Dekiru/caesar-cipher-python.git
+git clone https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01.git
 cd PRODIGY_CS_01
 
 * Save the code: If you're not cloning, save the provided Python code into a file named caesar_cipher.py (or any other .py extension).
