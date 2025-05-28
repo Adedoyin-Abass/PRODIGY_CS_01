@@ -43,11 +43,12 @@ The core logic resides in the caesar_cipher function:
 * shift = shift % 26: This normalizes the shift value so that it's always between 0 and 25. A shift of 27 is the same as a shift of 1, for example.
 * if mode == 'decrypt': shift = 26 - shift: For decryption, we essentially perform an encryption with the opposite shift. * Shifting "forward" by X for encryption is undone by shifting "forward" by 26 - X for decryption (which is effectively shifting "backward" by X).
 * ord(char) - start_ascii: This converts a letter to its 0-25 alphabet index (e.g., 'a' becomes 0, 'b' becomes 1).
-* + shift) % 26: Applies the shift and uses the modulo operator (% 26) to "wrap around" the alphabet. If you shift 'z' by 1, it becomes 'a'.
-* + start_ascii: Converts the 0-25 alphabet index back to its ASCII value.
+* shift) % 26: Applies the shift and uses the modulo operator (% 26) to "wrap around" the alphabet. If you shift 'z' by 1, it becomes 'a'.
+* start_ascii: Converts the 0-25 alphabet index back to its ASCII value.
 chr(shifted_char_ascii): Converts the ASCII value back to a character.
-https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/trois.png
-https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/deux.png
+
+![Alt text](https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/trois.png)
+![Alt text](https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/deux.png)
 
 ## Contributing
 Feel free to fork this repository, make improvements, and submit pull requests. Any contributions are welcome!
