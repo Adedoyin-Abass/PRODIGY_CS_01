@@ -35,7 +35,7 @@ def main():
             shift_input = input("Enter the shift value (an integer): ")
             shift = int(shift_input)
             break # Stop loop if input is an integer
-        except valueError:
+        except ValueError:
             print("Invalid shift value. Please enter an integer")
 
     while True:
@@ -51,7 +51,7 @@ def main():
         print(f"Shift Value: {shift}")
         print(f"\nEncrypted Message: {encrypted_message}")
     else:
-        decrypted_message_message = caesar_cipher(message, shift, 'decrypt')
+        decrypted_message = caesar_cipher(message, shift, 'decrypt')
         print(f"\nOriginal Message:{message}")
         print(f"Shift Value: {shift}")
         print(f"\nDecrypted Message: {decrypted_message}")
