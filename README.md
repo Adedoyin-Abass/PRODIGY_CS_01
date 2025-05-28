@@ -35,6 +35,7 @@ The program will then guide you through the process:
 * Enter your message.
 * Enter the shift value (an integer).
 * Choose to (e)ncrypt or (d)ecrypt.
+![Alt text](https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/un.png)
 
 ## Code Explanation
 The core logic resides in the caesar_cipher function:
@@ -45,6 +46,8 @@ The core logic resides in the caesar_cipher function:
 * + shift) % 26: Applies the shift and uses the modulo operator (% 26) to "wrap around" the alphabet. If you shift 'z' by 1, it becomes 'a'.
 * + start_ascii: Converts the 0-25 alphabet index back to its ASCII value.
 chr(shifted_char_ascii): Converts the ASCII value back to a character.
+https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/trois.png
+https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/deux.png
 
 ## Contributing
 Feel free to fork this repository, make improvements, and submit pull requests. Any contributions are welcome!
