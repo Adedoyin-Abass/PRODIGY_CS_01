@@ -10,12 +10,12 @@ def caesar_cipher(text, shift, mode):
         shift = 26 - shift
 
     for char in text:
-        # For lowercase
+        # For lowercase letters
         if 'a' <= char <= 'z':
             start_ascii = ord('a')
             shifted_char_ascii = (ord(char) - start_ascii + shift) % 26 + start_ascii
             result += chr(shifted_char_ascii)
-        # For UPERCASE
+        # For UPPERCASE letters
         elif 'A' <= char <= 'Z':
             start_ascii = ord('A')
             shifted_char_ascii = (ord(char) - start_ascii + shift) % 26 + start_ascii
@@ -23,7 +23,7 @@ def caesar_cipher(text, shift, mode):
         # To keep non-alphanumeric characters as they are
         else:
             result += char
-            return result
+    return result
 
 # Main Function
 def main():
