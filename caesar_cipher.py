@@ -2,7 +2,7 @@ def caesar_cipher(text, shift, mode):
 
     result = ""
 
-    # Normalize shift to be withi 0-25
+    # Normalize shift to be within 0-25
     shift = shift % 26
 
     # For Decryption, shift in the opposite direction
