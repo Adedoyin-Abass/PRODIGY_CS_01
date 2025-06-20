@@ -21,7 +21,7 @@ You only need Python 3 installed on your system to run this program.
 * Clone the repository (or copy the code into a .py file):
 
 Open `Bash`
-Type `git clone https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01.git`
+Type `git clone https://github.com/Adedoyin-Abass/PRODIGY_CS_01.git`
 `cd PRODIGY_CS_01`
 
 * Save the code: If you're not cloning, save the provided Python code into a file named `caesar_cipher.py` (or any other .py extension).
@@ -35,10 +35,10 @@ The program will then guide you through the process:
 * Enter your message.
 * Enter the shift value (an integer).
 * Choose to `(e)ncrypt` or `(d)ecrypt`.
-![Alt text](https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/un.png)
+![Alt text](https://github.com/Adedoyin-Abass/PRODIGY_CS_01/blob/main/Screenshots/un.png)
 
 ## Code Explanation
-The core logic resides in the caesar_cipher function:
+The core logic resides in the Caesar_cipher function:
 
 * `shift = shift % 26`: This normalizes the shift value so that it's always between 0 and 25. A shift of 27 is the same as a shift of 1, for example.
 * `if mode == 'decrypt': shift = 26 - shift`: For decryption, we essentially perform an encryption with the opposite shift. Shifting "forward" by X for encryption is undone by shifting "forward" by `26 - X` for decryption (which is effectively shifting "backward" by X).
@@ -47,8 +47,8 @@ The core logic resides in the caesar_cipher function:
 * `start_ascii`: Converts the 0-25 alphabet index back to its ASCII value.
 * `chr(shifted_char_ascii):` Converts the ASCII value back to a character.
 
-![Alt text](https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/trois.png)
-![Alt text](https://github.com/Ubuntu-Dekiru/PRODIGY_CS_01/blob/main/Screenshots/deux.png)
+![Alt text](https://github.com/Adedoyin-Abass/PRODIGY_CS_01/blob/main/Screenshots/trois.png)
+![Alt text](https://github.com/Adedoyin-Abass/PRODIGY_CS_01/blob/main/Screenshots/deux.png)
 
 ## Contributing
 Feel free to fork this repository, make improvements, and submit pull requests. Any contributions are welcome!
@@ -57,4 +57,4 @@ Feel free to fork this repository, make improvements, and submit pull requests. 
 This project is open source and available under the MIT License.
 
 ## Author
-Adedoyin Abass / https://github.com/Ubuntu-Dekiru
+Adedoyin Abass / https://github.com/Adedoyin-Abass
